@@ -39,12 +39,12 @@ public class LaptopController {
 		return lapSer.find();
 	}
 	
-	@PutMapping(value="updateid/{id}")
+	@PutMapping(value="updateById/{id}")
 	public Laptop update(@RequestBody Laptop l , @PathVariable int id) {
 		return lapSer.update(l,id);
 	}
 	
-	@DeleteMapping(value="deleteid/{id}")
+	@DeleteMapping(value="deleteById/{id}")
 	public String delete(@PathVariable int id) {
 		return lapSer.delete(id);
 	}
